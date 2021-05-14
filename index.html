@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevIori Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Update with fonts of my choice-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <!-- put your logo here-->
+      <img src="./img/iorimatsuhira_logo.png" alt="Iori Matsuhita Logo">
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <!-- -- is modifier class -->
+    <h1 class="section__title section__title--intro">
+      Hi, I am <strong>Iori Matsuhira</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">Fullstack dev</p>
+    <img src="./img/iori_profile.jpg" alt="a picture of Iori Matsuhita smiling" class="intro__img">
+  </section>
+
+  <!-- My services -->
+  <section class="my-services" id="services">
+    <h2 class="section__title section__title--services">What I do</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Design + Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+
+      <div class="service">
+        <h3>E-Commerce</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+
+      <div class="service">
+        <h3>WordPress</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+      </div>
+    </div>
+    <a href="#work" class="btn">My Work</a>
+  </section>
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">Front/Backend developer based in Berlin</p>
+    <div class="about-me__body">
+      <p>Hello, I'm Iori. After about six years of working various hospitality/customer support in Japan, Australia,
+        Germany, I retrained as a web developer.
+        With those experiences I offer problem solving skill and searching skill and achieve my goal, which is to work
+        as a developer for a tech company in Berlin.
+      </p>
+      <!-- <p></p> -->
+    </div>
+    <img src="./img/Iori-2.jpg" alt="Iori with white shirt" class="about-me__img">
+  </section>
+  <!-- My work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title section__title--work">My Work</h2>
+    <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+    <div class="portfolio">
+
+      <!--Portfolio item -->
+      <a href="./item_meet.html" class="portfolio__item">
+        <img src="./img/meetapp_img.png" alt="meetapp image" class="portfolio__img">
+      </a>
+
+      <a href="#" class="portfolio__item">
+        <img src="./img/Rectangle 3-2@2x.png" class="portfolio__img">
+      </a>
+
+      <a href="#" class="portfolio__item">
+        <img src="./img/Rectangle 3-3@2x.png" class="portfolio__img">
+      </a>
+
+      <a href="#" class="portfolio__item">
+        <img src="./img/Rectangle 3-4@2x.png" class="portfolio__img">
+      </a>
+
+      <a href="#" class="portfolio__item">
+        <img src="./img/Rectangle 3-5@2x.png" class="portfolio__img">
+      </a>
+
+      <a href="#" class="portfolio__item">
+        <img src="./img/Rectangle 3-6@2x.png" class="portfolio__img">
+      </a>
+
+      <a href="#" class="portfolio__item">
+        <img src="./img/Rectangle 3-7@2x.png" class="portfolio__img">
+      </a>
+
+      <a href="#" class="portfolio__item">
+        <img src="./img/Rectangle 3-8@2x.png" class="portfolio__img">
+      </a>
+
+      <a href="#" class="portfolio__item">
+        <img src="./img/Rectangle 3-9@2x.png" class="portfolio__img">
+      </a>
+
+      <a href="#" class="portfolio__item">
+        <img src="./img/Rectangle 3@2x.png" class="portfolio__img">
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:iorimatsuhira0210@gmail.com" class="footer__link">iorimatsuhira0210@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item"><a class="social-list__link" href="#">GitHub</a></li>
+      <li class="social-list__item"><a class="social-list__link" href="#">LinkedIn</a></li>
+      <li class="social-list__item"><a class="social-list__link" href="#">Twitter</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
+
+</html>

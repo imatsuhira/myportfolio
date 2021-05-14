@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Developer Iori Matsuhira Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Update with fonts of my choice-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="./img/iorimatsuhira_logo.png" alt="Iori Matsuhita Logo">
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+        <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+        <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <!-- -- is modifier class -->
+    <h1 class="section__title section__title--intro">
+      <strong>Meet App</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">Progressive Web App</p>
+    <img src="./img/meetapp_img.png" class="intro__img">
+  </section>
+
+  <div class="portfolio-item-individual">
+    <p>This is my first Progressive Web app with React and serverless(AWS)</p>
+    <img src="img/meetapp_img.png" alt="">
+    <p>To build a serverless, progressive web application (PWA) with React using a test-driven
+      development (TDD) technique. The application uses the Google Calendar API to fetch
+      upcoming events.</p>
+    <p>In this project I learned variety of tests(unit test, integration test, user acceptance testing, end to end
+      testing)
+      helped me finding an error and check which part of codes is not working.<br>
+      In order to get used to test-driven-environment, I tried to use tests as much as possible rather than console.log
+      and devtool, which wa a challenge for me but later it helped me to detect which code causes an error.<br>
+      Also learning serverless and Google API was a whole new experience.
+      How serverless works and authenticates user, then get information from Google API was a lot to absorb and I will
+      definitely keep building apps with these.
+      <a href="https://github.com/imatsuhira/meet">Check my code here</a>
+    </p>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:iorimatsuhira0210@gmail.com" class="footer__link">iorimatsuhira0210@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item"><a class="social-list__link" href="https://github.com/imatsuhira"
+          target="_blank">GitHub</a></li>
+      <li class="social-list__item"><a class="social-list__link"
+          href="https://www.linkedin.com/in/iori-matsuhira-bb64a3159" target="_blank">LinkedIn</a></li>
+      <li class="social-list__item"><a class="social-list__link" href="#">Twitter</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
+
+</html>
