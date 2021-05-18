@@ -19,7 +19,9 @@
 <body>
   <header>
     <div class="logo">
-      <img src="./img/iorimatsuhira_logo.png" alt="Iori Matsuhita Logo">
+      <a href="index.html">
+        <img src="./img/iorimatsuhira_logo.png" alt="Iori Matsuhita Logo">
+      </a>
     </div>
     <button class="nav-toggle" aria-label="toggle navigation">
       <span class="hamburger"></span>
@@ -44,21 +46,56 @@
   </section>
 
   <div class="portfolio-item-individual">
+
     <p>This is my first Progressive Web app with React and serverless(AWS)</p>
     <img src="img/meetapp_img.png" alt="">
-    <p>To build a serverless, progressive web application (PWA) with React using a test-driven
-      development (TDD) technique. The application uses the Google Calendar API to fetch
-      upcoming events.</p>
-    <p>In this project I learned variety of tests(unit test, integration test, user acceptance testing, end to end
-      testing)
-      helped me finding an error and check which part of codes is not working.<br>
-      In order to get used to test-driven-environment, I tried to use tests as much as possible rather than console.log
-      and devtool, which wa a challenge for me but later it helped me to detect which code causes an error.<br>
-      Also learning serverless and Google API was a whole new experience.
-      How serverless works and authenticates user, then get information from Google API was a lot to absorb and I will
-      definitely keep building apps with these.<br>
-      <strong><a href="https://github.com/imatsuhira/meet">Check my code here</a></strong>
-    </p>
+    <div class="case-study__container">
+      <div class="case-study__item">
+        <h3>Objective</h3>
+        <p>To build a serverless, progressive web application (PWA) with React using a test-driven
+          development (TDD) technique. The application uses the Google Calendar API to fetch
+          upcoming events.</p>
+
+        <h3>Through the project</h3>
+        <p>In this project I focused on learning test driven development, also solidifying my React knowledge.
+          At first I created user story, then coded tests and functions.
+          Through this project I used several tests (unit, integration, user acceptance, end-to-end) and they
+          helped me constructing codes, finding an error and check which part is not working.<br>
+          In order to get used to test-driven-environment, I tried to use tests as much as possible rather than
+          console.log
+          and developer tool, which was a challenge for me but later it helped me to detect which code causes an
+          error.<br>
+          Also learning serverless and Google API was a whole new experience how serverless works and authenticates
+          user,
+          then get information from Google API.
+        </p>
+
+        <h3>Next step</h3>
+        <p>At the beginning it was a big challenge with all information about tests and React, and serverless.
+          However, I believe I grew up much more than before and became more confident with React and I would love to
+          keep
+          coding with React and create progressive web app.
+        </p>
+      </div>
+      <div class="case-study__item">
+        <div class="list__container">
+          <h3>Tools used</h3>
+          <ul>
+            <li>React</li>
+            <li>Jest</li>
+            <li>Jest-Cucumber</li>
+            <li>Puppeteer</li>
+            <li>Amazon Web Server</li>
+            <li>Google API (calendar)</li>
+          </ul>
+        </div>
+        <div class="links">
+          <strong><a href="https://github.com/imatsuhira/meet">Check my code here</a></strong><br>
+          <strong><a href="https://imatsuhira.github.io/meet/" target="_blank">Meet App Demo</a></strong><br>
+          <strong><a href="./img/meet_appimg.png" target="_blank">Image</a></strong>
+        </div>
+      </div>
+    </div>
   </div>
 
 

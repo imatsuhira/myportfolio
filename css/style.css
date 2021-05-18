@@ -15,7 +15,7 @@
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: tomato;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -467,6 +467,18 @@ nav {
 
 .portfolio-item-individual p {
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.portfolio-item-individual h3 {
+  color: var(--clr-accent);
+  font-size: var(--fs-h3);
+  margin-top: 30px;
+}
+
+.case-study__container {
+  display: flex;
+}
+
+.case-study__item {
+  margin-left: 50px;
 }
