@@ -475,6 +475,10 @@ nav {
   margin-top: 30px;
 }
 
+.portfolio-item-individual img {
+  box-shadow: var(--bs);
+}
+
 .case-study__container {
   display: flex;
 }
