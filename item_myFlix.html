@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstack Developer Iori Matsuhira Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Update with fonts of my choice-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="./img/iorimatsuhira_logo.png" alt="Iori Matsuhita Logo">
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+        <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+        <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <!-- -- is modifier class -->
+    <h1 class="section__title section__title--intro">
+      <strong>MyFlix React</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">React App with Backend</p>
+    <img src="./img/myFlix_React_main.png" class="intro__img">
+  </section>
+
+  <div class="portfolio-item-individual">
+
+    <p>MyFlix is a movie database, user can search, add/remove a movie from favorites. This is my first React app with self made backend.</p>
+    <img src="./img/myFlix_React_main.png" alt="meet app image">
+    <div class="case-study__container">
+      <div class="case-study__item">
+        <h3>Objective</h3>
+        <p>To build the server-side component of a “movies” web application. The web
+            application will provide users with access to information about different
+            movies, directors, and genres. Users will be able to sign up, update their
+            personal information, and create a list of their favorite movies.<br>
+            Using React, build the client-side for an application called myFlix based on
+            its existing server-side code (REST API and database</p>
+        <h3>Technical Requirements</h3>
+          <ul>
+            <li>Return a list of ALL movies to the user</li>
+            <li>Return data(description, genre, director, image URL) about a single movie by title to the user</li>
+            <li>Return data about a genre(description) by name/title(e.g. "Thriller")</li>
+            <li>Return data about a director(bio, birth year, death year) by name</li>
+            <li>Allow new users to register</li>
+            <li>Allow users to update their user info(username, password, email, data of birth)
+            </li>
+            <li>Allow users to add/remove a movie to their list of favorites
+            </li>
+            <li>Add existing user to deregister</li>
+            <li>Create React components corresponding to these features</li>
+          </ul>
+        </p>
+        <p style="text-align: center; margin-left: 3em;">Example of features</p>
+        <video width="700" height="480" controls>
+            <source src="./img/myFlix_client.mp4" alt="myFlix feature video" type="video/mp4">
+        </video>
+
+        <h3>Through the project and problem I faced, how I engaged</h3>
+        <p>
+          <ul>
+            <li>Create endpoints</li>
+            <p>First of all, I created endpoints for REST API, then I added it to <a href="https://my-flix-api-practice.herokuapp.com/documentation.html">documentation.html</a> so I can refer when I code front end.</p>
+            <li>Add these endpoints contain key features to MongoDB</li>
+            <p>When I installed MongoDB into my computer, it showed an error and I couldn't solve it for a few days because of Mac OS Catalina and MongoDB connection issue. However, I solved the problem by myself with the help of Google. At the moment, I realized the importance of searching skills and having a strong will to solve a problem.
+                also, I put incoherent attribute once to user section (ex, some user have "Username", some have "Name") therefor I checked everything and corrected.
+            </p>
+            <li>Implement authentication & authorization features</li>
+            <p>After having added all features and information into my database, I applied Token-based authentication and tried on Postman. I had a problem in which an existing user couldn't log in but this user information was added before I added the hash password. I was successful with a newly registered user with a hashed password.</p>
+            <img src="./img/CF_login_task2.9.png" alt="Postman user login">
+            <p>Postman user login</p>
+            <li>CORS policy and server side validation</li>
+            <li>Create React client-side app</li>
+            <p>This was my first opportunity to learn React.js. In the beginning, it was an uphill battle for me with state management and passing as props, function/class components, how each components works each other... It was really hard for me to wrap a head around.<br>
+                To overcome this problem, I enrolled a few schools to understand and solidify knowledge and learn by coding. This took longest in my learning process. I also created simple app like meme generator to see how props are passed to child component.
+            </p>
+            <li>Apply React Redux</li>
+            <p>After having finished adding HTTP methods(GET, POST, PUT, DELETE)on my app with React, I added Redux to learn another way of state management. </p>
+          </ul>
+        </p>
+
+        <h3>Next step</h3>
+        <p>Learning React was a huge challenge for me. However, thanks to advice from my mentor and tutor, also a ton of practice, I finally understood how this works, and managed to release my first backend/frontend altogether app. I am so proud of myself not to have given up and now I like coding with React.
+            Once you get a grasp of how it's working, it's very convenient with state/props, components. I will keep practicing and would love to be an even better React developer.
+        </p>
+      </div>
+      <div class="case-study__item">
+        <div class="list__container">
+          <h3>Duration: </h3>
+          <p>Three month</p>
+          <h3>Role: </h3>
+          <p>Fullstack developer</p>
+          <h3>Tools used</h3>
+          <ul>
+            <li>React</li>
+            <li>React Redux</li>
+            <li>React Bootstrap</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+            <li>Heroku</li>
+            <li>Token-based authentication(JWT)</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+        <div class="links">
+          <strong><a href="https://github.com/imatsuhira/movie_api">Backend code</a></strong><br>
+          <strong><a href="https://github.com/imatsuhira/myFlix-client">Frontend code</a></strong><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:iorimatsuhira0210@gmail.com" class="footer__link">iorimatsuhira0210@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item"><a class="social-list__link" href="https://github.com/imatsuhira"
+          target="_blank">GitHub</a></li>
+      <li class="social-list__item"><a class="social-list__link"
+          href="https://www.linkedin.com/in/iori-matsuhira-bb64a3159" target="_blank">LinkedIn</a></li>
+      <!-- <li class="social-list__item"><a class="social-list__link" href="#">Twitter</a></li> -->
+    </ul>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
+
+</html>
