@@ -5,15 +5,17 @@
   <meta charset="UTF-8">
   <meta="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fullstack Developer Iori Matsuhira Portfolio Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
       integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-
     <!-- Update with fonts of my choice-->
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet">
-
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -53,48 +55,65 @@
       <div class="case-study__item">
         <h3>Objective</h3>
         <p>To build a small web application with HTML, CSS, and JavaScript that loads
-            data from an external API and enables the viewing of data points in detail.</p>
+          data from an external API and enables the viewing of data points in detail.</p>
         <h3>Technical Requirements</h3>
-          <ul>
-            <li>The app must load data from an external API(Pokemon API)</li>
-            <li>The app must display a list of items loaded from that API after the page is loaded</li>
-            <li>The app must enable the viewing of more details for a given list item(like a Pokemon)on demand, such as when clicking on a list item.</li>
-            <li>The app must have CSS styling</li>
-            <li>The JavaScript code must be formatted according to ESLint rules.</li>
-            <li>The app must use at least one additional complex UI pattern, such as a modal, for details or touch interactions.
-            </li>
-            <li>The app must not throw any errors when being used.
-            </li>
-            <li>The app should be deployed to a publicly accessible platform like GitHub</li>
-            <li>This app must work in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.</li>
-          </ul>
+        <ul>
+          <li>The app must load data from an external API(Pokemon API)</li>
+          <li>The app must display a list of items loaded from that API after the page is loaded</li>
+          <li>The app must enable the viewing of more details for a given list item(like a Pokemon)on demand, such as
+            when clicking on a list item.</li>
+          <li>The app must have CSS styling</li>
+          <li>The JavaScript code must be formatted according to ESLint rules.</li>
+          <li>The app must use at least one additional complex UI pattern, such as a modal, for details or touch
+            interactions.
+          </li>
+          <li>The app must not throw any errors when being used.
+          </li>
+          <li>The app should be deployed to a publicly accessible platform like GitHub</li>
+          <li>This app must work in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.</li>
+        </ul>
         <p style="text-align: center; margin-left: 3em;">Example of features</p>
         <img src="img/pokedex.gif" alt="pokedex opens pokemon details modal">
 
         <h3>Through the project and problem I faced, how I engaged</h3>
         <p>
-          <ul>
-            <li>Basic JavaScript features</li>
-            <p>First of all, I needed to study all JavaScript basics which begin with variables, arrays, objects.<br>
-            I took notes, watched many videos on YouTube, and practiced until I understand correctly because I thought "learn by coding" is very important.<br></p>
-            <li>For loop</li>
-            <p>Second of all, I tried to get information from a pokemon list created by myself without API the tried to see if my code renders these variables on my app with for loop.<br>
-            At this point, I had a problem with displaying pokemon correctly because I forgot to add iterator index next to list item(ex: pokemonList<strong>[i]</strong>.name)<br>
+        <ul>
+          <li>Basic JavaScript features</li>
+          <p>First of all, I needed to study all JavaScript basics which begin with variables, arrays, objects.<br>
+            I took notes, watched many videos on YouTube, and practiced until I understand correctly because I thought
+            "learn by coding" is very important.<br></p>
+          <li>For loop</li>
+          <p>Second of all, I tried to get information from a pokemon list created by myself without API the tried to
+            see if my code renders these variables on my app with for loop.<br>
+            At this point, I had a problem with displaying pokemon correctly because I forgot to add iterator index next
+            to list item(ex: pokemonList<strong>[i]</strong>.name)<br>
             But afterward, I managed to render my pokemon information correctly.</p>
-            <li>Function</li>
-            <p>To get used to functions, I made calculator on <a href="https://replit.com/@hellomelancholi/CalculatorTaskPart1#script.js" target="_blank">Repl</a> with multiply, divide, increment, and decrement.</p>
-            <li>DOM interactions</li>
-            <p>Next, I learned how to interact HTML with JavaScript. In the beginning, it was challenging because I couldn't directory see on HTML file when I dealt with elements via JavaScript. So in the beginning I wrote down my note and made it clear which content I was working on.</p>
-            <li>Asynchronous code and API, Promise</li>
-            <p>After having finished creating basic button lists of pokemon, I learned how asynchronous works and how to fetch information from API. I made code with setTimeOut() to understand how asynchronous code works and also made some promises by myself to see how these works.</p>
-            <li>Modal, Bootstrap</li>
-            <p>At last, I created Modal to show details of each pokemon with DOM interactions and added simple bootstrap to understand the difference between bootstrap and vanilla CSS. Although I studied DOM interactions, to show a modal was quite a challenge because it was not just a list or button but the whole modal itself. I asked for help from my tutor and mentor, also wrote down a paper to see the whole image.</p>
-          </ul>
+          <li>Function</li>
+          <p>To get used to functions, I made calculator on <a
+              href="https://replit.com/@hellomelancholi/CalculatorTaskPart1#script.js" target="_blank">Repl</a> with
+            multiply, divide, increment, and decrement.</p>
+          <li>DOM interactions</li>
+          <p>Next, I learned how to interact HTML with JavaScript. In the beginning, it was challenging because I
+            couldn't directory see on HTML file when I dealt with elements via JavaScript. So in the beginning I wrote
+            down my note and made it clear which content I was working on.</p>
+          <li>Asynchronous code and API, Promise</li>
+          <p>After having finished creating basic button lists of pokemon, I learned how asynchronous works and how to
+            fetch information from API. I made code with setTimeOut() to understand how asynchronous code works and also
+            made some promises by myself to see how these works.</p>
+          <li>Modal, Bootstrap</li>
+          <p>At last, I created Modal to show details of each pokemon with DOM interactions and added simple bootstrap
+            to understand the difference between bootstrap and vanilla CSS. Although I studied DOM interactions, to show
+            a modal was quite a challenge because it was not just a list or button but the whole modal itself. I asked
+            for help from my tutor and mentor, also wrote down a paper to see the whole image.</p>
+        </ul>
         </p>
 
         <h3>Next step</h3>
-        <p>Overall, this project was very challenging but really interesting and I felt really good to have made the first step to being a full-stack developer. Though the app looks very simple, I learned a lot as listed above, which is very fundamental and of course, I use it every day on my new projects.<br>
-            As a next step, I will learn how to create a back end and get information from it. I am so excited to see what I can learn next.
+        <p>Overall, this project was very challenging but really interesting and I felt really good to have made the
+          first step to being a full-stack developer. Though the app looks very simple, I learned a lot as listed above,
+          which is very fundamental and of course, I use it every day on my new projects.<br>
+          As a next step, I will learn how to create a back end and get information from it. I am so excited to see what
+          I can learn next.
         </p>
       </div>
       <div class="case-study__item">
@@ -122,18 +141,61 @@
 
 
   <!-- Footer -->
-  <footer class="footer">
-    <a href="mailto:iorimatsuhira0210@gmail.com" class="footer__link">iorimatsuhira0210@gmail.com</a>
+  <footer class="footer" id="footer">
+    <a href="#footer" id="contact__btn" class="footer__link">Contact</a>
+    <!-- The Modal -->
+    <div id="contact__modal" class="modal">
+      <div id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Contact me</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form action="https://app.99inbound.com/api/e/lJGPEecu" method="POST">
+            <div class="md-form mb-5">
+              <label data-error="wrong" data-success="right" for="form34">Your name</label>
+              <input type="text" name="Name" id="form34" class="form-control validate">
+            </div>
+
+            <div class="md-form mb-5">
+              <label data-error="wrong" data-success="right" for="form29">Your email</label>
+              <input type="email" name="Email" id="form29" class="form-control validate">
+            </div>
+
+            <div class="md-form mb-5">
+              <label data-error="wrong" data-success="right" for="form32">Subject</label>
+              <input type="text" name="Subject" id="form32" class="form-control validate">
+            </div>
+
+            <div class="md-form">
+              <label data-error="wrong" data-success="right" for="form8">Your message</label>
+              <textarea type="text" name="Message" id="form8" class="md-textarea form-control" rows="4"></textarea>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-unique">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+            </div>
+            <div style="position: absolute; left: -5000px;">
+              <input type="checkbox" name="tailored_magenta_satin_weasel" value="1" tabindex="-1" autocomplete="no">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <ul class="social-list">
       <li class="social-list__item"><a class="social-list__link" href="https://github.com/imatsuhira"
           target="_blank">GitHub</a></li>
       <li class="social-list__item"><a class="social-list__link"
           href="https://www.linkedin.com/in/iori-matsuhira-bb64a3159" target="_blank">LinkedIn</a></li>
-      <!-- <li class="social-list__item"><a class="social-list__link" href="#">Twitter</a></li> -->
+      <!-- I will add this section when I create Twitter account <li class="social-list__item"><a class="social-list__link" href="#">Twitter</a></li> -->
     </ul>
   </footer>
 
   <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 
