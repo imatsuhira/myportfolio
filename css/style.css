@@ -150,7 +150,7 @@ header {
   max-width: 100px;
 }
 
-nav {
+.mynav {
   position: fixed;
   background: var(--clr-dark);
   color: var(--clr-light);
@@ -197,7 +197,7 @@ nav {
   z-index: 1000;
 }
 
-.nav-open .nav {
+.nav-open .mynav {
   transform: translateX(0);
 }
 
