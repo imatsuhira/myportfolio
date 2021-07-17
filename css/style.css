@@ -326,6 +326,11 @@ header {
   margin: 0;
 }
 
+.service__btn__container {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 800px) {
   .services {
     display: flex;
@@ -346,6 +351,11 @@ header {
 
 .about-me__img {
   box-shadow: var(--bs);
+}
+
+.about-me__list {
+  display: flex;
+  justify-content: space-around;
 }
 
 @media (min-width: 600px) {
